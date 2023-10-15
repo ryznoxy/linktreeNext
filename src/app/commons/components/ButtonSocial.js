@@ -7,8 +7,20 @@ export default function ButtonSocials() {
   return (
     <div className="flex justify-center items-center">
       {SOCIAL_LINKS.map(({ label, href, index, icon }) => (
-        <Tooltip key={index} content={label} size={'sm'} color='foreground' offset={-2}>
-          <Link key={label} href={href} className="m-2 p-2 rounded-full " target="_blank">
+        <Tooltip
+          key={index}
+          content={label}
+          size={"sm"}
+          color="foreground"
+          offset={-2}
+        >
+          <Link
+            key={label}
+            href={href}
+            className="m-2 p-2 rounded-full "
+            target="_blank"
+            aria-label={label}
+          >
             {icon}
           </Link>
         </Tooltip>

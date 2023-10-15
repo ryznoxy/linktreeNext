@@ -21,6 +21,8 @@ export function ThemeSwitcher() {
   return (
     <button
       className="p-2 bg-current absolute right-4 top-4 text-inherit rounded-2xl"
+      name="theme-switcher"
+      aria-label="theme-switcher"
       onClick={() => {
         setTheme(theme === "dark" ? "light" : "dark");
       }}
