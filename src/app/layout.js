@@ -8,7 +8,7 @@ const poppins = Poppins({
 });
 
 export const metadata = {
-  title: "Rezaa - Home",
+  title: "Rezaa",
   description: "Pohonlink by Rezaa",
 };
 

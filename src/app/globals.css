@@ -6,6 +6,8 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  --background: white;
+  --foreground: black;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -14,6 +16,11 @@
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
   }
+}
+
+[data-theme='dark'] {
+  --background: black;
+  --foreground: white;
 }
 
 /* *::-webkit-scrollbar-track

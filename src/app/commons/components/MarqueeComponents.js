@@ -19,10 +19,10 @@ export default function MarqueeComponents() {
     <>
       <div className="max-w-sm px-4 mt-20 " data-aos='fade'>
         <p className="my-3 font-medium flex items-center gap-2"><span className='text-2xl'><BiCodeAlt></BiCodeAlt></span>My Skill</p>
-        <Marquee>
+        <Marquee speed={30}>
           <SkillPills></SkillPills>
         </Marquee>
-        <Marquee direction="right" className="mt-4 mb-10">
+        <Marquee direction="right" speed={30} className="mt-2 mb-10">
           <SkillPills></SkillPills>
         </Marquee>
       </div>

@@ -20,13 +20,15 @@ export default function ProjectBtn() {
         <Link
           key={index}
           href={link}
-          className=" transition-all duration-300 ease-in-out hover:shadow-lg text-center py-4 px-32 border-2 rounded-xl shadow-md"
+          className=" transition-all duration-300 ease-in-out hover:shadow-xl text-center py-4 
+                        px-32 border-2 rounded-xl shadow-lg
+                       dark:shadow-white/20 dark:hover:bg-white dark:hover:text-black"
           data-aos="fade-down"
           data-aos-delay={delay}
           target="_blank"
         >
-          <h1 key={index}>
-            {icon}
+          <h1 key={index} className='flex gap-2'>
+            <span>{icon}</span>
             {name}
           </h1>
         </Link>
