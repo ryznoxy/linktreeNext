@@ -17,7 +17,7 @@ export default function MarqueeComponents() {
   });
   return (
     <>
-      <div className="max-w-sm px-4 mt-20 " data-aos='fade'>
+      <div className="max-w-sm px-4 mt-20" data-aos='fade' data-aos-delay="200">
         <p className="my-3 font-medium flex items-center gap-2"><span className='text-2xl'><BiCodeAlt></BiCodeAlt></span>My Skill</p>
         <Marquee speed={30}>
           <SkillPills></SkillPills>

@@ -15,22 +15,20 @@ export default function ProjectBtn() {
     });
   });
   return (
-    <div className="flex justify-center items-center flex-col text-center text-sm space-y-4 mt-10 ">
+    <div className="flex justify-center items-center flex-col text-center text-sm space-y-4 mt-10">
       {projectList.map(({ name, link, index, icon, delay }) => (
         <Link
           key={index}
           href={link}
-          className=" transition-all duration-300 ease-in-out hover:shadow-xl text-center py-4 
-                        px-32 border-2 rounded-xl shadow-lg
-                       dark:shadow-white/20 dark:hover:bg-white dark:hover:text-black"
+          className=" transition-all duration-300 ease-in-out hover:shadow-xl text-center py-4
+                        px-28 md:px-32  border-2 rounded-xl shadow-lg flex
+                      dark:shadow-white/20 dark:border-neutral-800 dark:hover:bg-neutral-100/90 dark:hover:text-black"
           data-aos="fade-down"
           data-aos-delay={delay}
           target="_blank"
         >
-          <h1 key={index} className='flex gap-2'>
-            <span>{icon}</span>
-            {name}
-          </h1>
+          <span>{icon}</span>
+          <h1 key={index}>{name}</h1>
         </Link>
       ))}
     </div>

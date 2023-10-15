@@ -23,7 +23,7 @@ export default function Home() {
   return (
     <>
       <div className="max-w-md mx-auto container " data-aos="fade-down">
-        <div className="flex flex-warp items-center flex-col  h-scree n mx-4">
+        <div className="flex flex-warp items-center flex-col  h-screen px-4">
           
           <div className=" relative w-full">
             <ThemeSwitcher />
